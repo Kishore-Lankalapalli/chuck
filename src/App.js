@@ -33,7 +33,11 @@ class App extends Component {
         <h1 className="chunk-noories-title">Chuck Norries</h1>
         <ul className="categories-list-container">
           {categoriesList.map((category, index) => (
-            <JokeCategoryItem category={category} key={index + 1} />
+            <JokeCategoryItem
+              category={category}
+              id={index + 1}
+              key={index + 1}
+            />
           ))}
         </ul>
       </div>

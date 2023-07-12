@@ -54,11 +54,12 @@ class JokeCategoryItem extends Component {
   );
 
   render() {
-    const { category } = this.props;
+    const { category, id } = this.props;
 
     const { categoryItem, joke, jokeTextStatus } = this.state;
 
     const { value } = joke;
+    console.log(id);
 
     return (
       <Popup
